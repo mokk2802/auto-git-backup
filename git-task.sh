@@ -20,7 +20,7 @@ REMOTE_URL="https://${CLEAN_USER}:${CLEAN_TOKEN}@${CLEAN_REPO}"
 git add .
 
 if git diff --cached --quiet; then
-    echo "No changes to commit."
+    echo "No changes to commit"
 else
     # 5. Коммит изменений
     git commit -m "Automated backup: $(date +'%Y-%m-%d %H:%M:%S')"
